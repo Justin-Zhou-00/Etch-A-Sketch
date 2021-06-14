@@ -1,0 +1,66 @@
+Etch-a-sketch
+
+// Create 16x16 div grid
+
+javascript
+create a variable which finds the container element from html
+
+create a function which takes two args one from the number of rows and the other for the number of columns
+
+
+
+
+
+css
+css variables
+
+html
+
+
+
+
+css variables
+Purpose: Variables are used to better understand css values that would be reused throughtout a document.
+
+Syntax:
+--main-color: black;
+color: var(--main-color);
+
+or --main-color: #00ff00 // can be set to any hex value.
+This makes it more readable.
+
+It is common to define the variables in the :root pseudo-class so that it
+can be applied globally across the HTML document.
+
+** :root{
+	--main-bg-color: brown;
+   }
+
+
+repeat("# of times repeated", "size of the grid")
+repeat() is used to repeat the number of columns or rows in grid, 
+this is used for readability and simplicity. 
+Instead of:
+	grid-template-columns: 1f 1f 1f 1f;
+	grid-template-columns:repeat(4, 1f);
+
+
+css grid
+
+flexbox used for one dimension
+css grid used for two dimensions
+
+Grid uses a container
+
+create a container in html with a class name which can later be used to link up in css
+
+css
+.container{
+	display:grid;
+	grid-template-columns: 1fr 2fr//used to define the width of each column
+	commonly uses fr// which stands for fraction units, 
+	the grid is then seperated in terms of fractions
+
+	grid-template-row: //used to define the height of each row
+}
+
